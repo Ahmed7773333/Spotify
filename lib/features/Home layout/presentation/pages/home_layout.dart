@@ -88,7 +88,7 @@ class _HomeLayoutState extends State<HomeLayout> {
             body: PageView(
               controller: _pageController,
               children: [
-                homeTab(state.userPlayList ?? [], state.newSong ?? [],
+                HomeTab(state.userPlayList ?? [], state.newSong ?? [],
                     state.podcasts ?? []),
                 searchTab(
                   searchController,
